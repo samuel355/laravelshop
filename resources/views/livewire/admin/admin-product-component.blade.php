@@ -43,8 +43,8 @@
                                         <td>{{$product->category->name}}</td>
                                         <td>{{$product->created_at}}</td>
                                         <td>
-                                            <a href=""></a>
-                                            <a href=""></a>
+                                            <a href="{{route('admin.editproduct', ['product_slug' =>$product->slug])}}"><i class="fa fa-edit fa-2x"></i></a>
+                                            <a href=""><i class="fa fa-times text-danger fa-2x"></i></a>
                                         </td>
                                     </tr>
                                 @endforeach
