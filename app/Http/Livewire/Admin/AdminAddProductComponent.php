@@ -57,6 +57,7 @@ class AdminAddProductComponent extends Component
         session()->flash('message', 'Product Added Successfully');
     }
 
+
     public function render()
     {
         $categories = Category::all();
